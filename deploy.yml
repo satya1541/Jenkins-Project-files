@@ -1,0 +1,6 @@
+- hosts: all
+  tasks:
+    - name: Deploy NETFLIX-1.2.2.war to Tomcat
+      copy:
+        src: /var/lib/jenkins/workspace/project-001/target/NETFLIX-1.2.2.war
+        dest: /root/tomcat/webapps/NETFLIX-1.2.2.war
